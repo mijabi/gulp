@@ -35,7 +35,8 @@ var gulpConfig = require('./gulp.config.js');
 
 // var gulpsmith = require('gulpsmith');
 var metalsmith = require('gulp-metalsmith');
-var metalsmithLayout = require('metalsmith-layouts');
+var metalsmithLayout = require('metalsmith-layouts'); // use option
+var metalsmithInplace = require('metalsmith-in-place'); // use partial & yaml front matter
 
 
 gulp.task('clean', function () {
@@ -96,8 +97,18 @@ gulp.task('metalsmith', function () {
         metalsmithLayout({
           engine: 'handlebars',
           "directory": "./src/html/layout",
-          "partials": "./src/html/html",
+          "partials": "./src/html/partial",
           "default": "default.html",
+        // }),
+        // metalsmithPartial({
+        //   'directory': './src/html/partial'
+        // }),
+        // metalsmithTemplates({
+        //   'engine': 'eco',
+        //   'inPlace': true
+        }),
+        metalsmithInplace({
+          "engine": "handlebars"
         })
       ]
     }))
