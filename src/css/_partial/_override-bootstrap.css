@@ -1,0 +1,70 @@
+.form-control-label {
+  font-size: 0.8rem;
+}
+
+.form-group.row {
+  margin-bottom: 1.8rem;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 0) { /* xs*/
+  /*.xs-m-b-1 {
+    margin-bottom: 1rem;
+  }*/
+  .sm-m-b-1 {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 544px) { /*sm*/
+}
+@media (min-width: 768px) {/*md*/
+  .md-m-b-1 {
+    margin-bottom: 1rem;
+  }
+  /*.xs-m-b-1 {
+    margin-bottom: 0;
+  }*/
+}
+@media (min-width: 992px) {/*lg*/
+  /*.xs-m-b-1 {
+    margin-bottom: 0;
+  }*/
+}
+
+@media (min-width: 1200px) {/*xl*/
+  /*.xs-m-b-1 {
+    margin-bottom: 0;
+  }*/
+}
+
+
+/*html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}*/

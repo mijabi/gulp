@@ -1,7 +1,20 @@
-# tabi
+# gulp
+
+
+## setting up
 
 ```zsh
+% npm install -g gulp
 % npm install
-% npm install -D jquery
-% npm install -D react
 ```
+
+```zsh
+% gulp sass // only once
+```
+
+## build
+
+```zsh
+% gulp
+```
+

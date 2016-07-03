@@ -1,14 +1,38 @@
-// var $ = require('jquery');
+import $ from 'NODE_MODULES/jquery/dist/jquery';
 
-// $(function(){
-//   console.log('hoge');
-//   console.log('fuga');
-// });
+import Checker from 'CLASSES/Checker';
+import Submitter from 'CLASSES/Submitter';
 
-const add1 = (a) => a + 1;
-const times2 = (a) => a * 2;
-const compose = (a, b) => (c) => a(b(c));
-const add1OfTimes2 = compose(add1, times2);
-console.log(add1OfTimes2(5)); // => 11
+window.jQuery = window.$ = $;
 
-console.log('fg--1');
+const pulp = window.pulp = window.pulp || {};
+
+{
+
+  const ce = pulp.ce || {};
+  ce.Checker = Checker;
+  ce.Submitter = Submitter;
+
+  // ce.somothing = function() {
+  // };
+  //
+  // ce.init = function() {
+  //   this.something();
+  // }
+  //
+  // ce.init();
+
+  pulp.ce = ce;
+
+}
+
+
+const checkerB = new pulp.ce.Checker('.js-checker--b', '.js-copier--b', '.js-container--b', 'b');
+checkerB.init();
+const checkerC = new pulp.ce.Checker('.js-checker--c', '.js-copier--c', '.js-container--c', 'c');
+checkerC.init();
+const checkerD = new pulp.ce.Checker('.js-checker--d', '.js-copier--d', '.js-container--d', 'd');
+checkerD.init();
+
+const submitter = new pulp.ce.Submitter('.js-button-submit');
+submitter.init();

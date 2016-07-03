@@ -1,0 +1,31 @@
+.width-70 {
+  width: 70px !important;
+}
+.width-80 {
+  width: 80px !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+
+.font-size-75 {
+  font-size: 75%;
+}
+
+.font-size-1 { font-size: 2.5rem; }
+.font-size-2{ font-size: 2rem; }
+.font-size-3{ font-size: 1.75rem; }
+.font-size-4{ font-size: 1.5rem; }
+.font-size-5{ font-size: 1.25rem; }
+.font-size-6{ font-size: 1rem; }
+.font-size-7{ font-size: .86rem; }
+.font-size-8{ font-size: .74rem; }
+.font-size-9{ font-size: .69rem; }
+
+.m-t-7px {
+  margin-top: 7px;
+}
+
+.color-humble {
+  color: #999;
+}

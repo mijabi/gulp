@@ -8,11 +8,24 @@ module.exports = {
     // devtool: 'inline-source-map', // write inline comment
     module: {
       loaders: [
-    { test: /\.jsx$/, loader: 'jsx-loader' }
+        {
+          test: /\.js$/,
+          loader: 'babel-loader',
+          exclude: /(node_modules)/,
+          query: {
+            presets: ['es2015']
+            // presets: ['react', 'es2015']
+          }
+        }
       ]
     },
     resolve: {
-      extensions: ['', '.js', '.jsx']
+      extensions: ['', '.js', '.jsx'],
+      alias: {
+        NODE_MODULES : '../../node_modules',
+        LIB          : './lib',
+        CLASSES      : './_classes'
+      }
     }
     // ,
     // plugins: [

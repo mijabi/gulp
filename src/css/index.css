@@ -1,7 +1,74 @@
-@import "../../node_modules/sanitize.css/sanitize.css";
 @import "../../node_modules/bootstrap/css/bootstrap.css";
+@import "_partial/_override-bootstrap.css";
+@import "_partial/_layout.css";
+@import "_partial/_helper.css";
+/*@import "../../node_modules/sanitize.css/sanitize.css";*/
 
-body {
+select {
+  height: 2.4em;
+}
+
+html, body {
+  font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,Roboto,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo UI","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic";
+  /*font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,Roboto,"游ゴシック","Yu Gothic","游ゴシック体",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo UI","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic";*/
+}
+
+.logo {
+}
+/*.form-title-text {
+  font-size: 0.8rem;
+}*/
+
+
+.error-part {
+  margin-bottom: 0;
+  > dt {
+    padding-top: 5px;
+    padding-bottom: 3px;
+  }
+  > dd {
+    line-height: 1.4;
+    > div {
+      padding-left: .6em;
+    }
+  }
+}
+
+.category-devider {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-top: 2px dashed rgba(128, 128, 128, 0.1);
+}
+
+.terms-of-use-part {
+  border: 1px solid #ddd;
+  /*height: 20em;*/
+  /*overflow-x: scroll;*/
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+}
+.terms-of-use-part__title {
+  margin: 1.4rem 2rem;
+  line-height: 1.7;
+}
+.terms-of-use-part__table {
+  margin-top: .5rem;
+}
+
+.terms-of-use-part__paper {
+  background: #eee;
+  border: 1px solid #ddd;
+  margin-top: .5rem;
+  padding: 1.5rem 1rem;
+}
+.terms-of-use-part__ol {
+  margin-bottom: 1rem;
+}
+.terms-of-use-part__ol > li{
+  margin-bottom: .5rem;
+}
+
+/*body {
   font-size: 2em;
   color: #333;
   h1 {
@@ -25,4 +92,4 @@ p {
 
 :fullscreen a {
     display: flex
-}
+}*/
